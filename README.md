@@ -81,44 +81,44 @@ Copy code
 
 ## 📦 Installation
 
-## Clone the repository
+ Clone the repository
 
 - git clone https://github.com/your-username/paytm-main.git
 - cd paytm-main
 
 
-##▶️ Running the Backend
+▶️ Running the Backend
 
 - cd backend
 - npm install
 - node index.js
 
-#Backend runs at:
+Backend runs at:
    [http://localhost:3000](https://cloud.mongodb.com/v2/68ca7eb8c04b5f76d50564df#/explorer/68ca7ee6edcf2948f0388200/mydatabase/accounts/find)
 
 
-##▶️ Running the Frontend
+▶️ Running the Frontend
 
 - cd frontend
 - npm install
 - npm run dev
 
-#Frontend runs at:
+Frontend runs at:
 - http://localhost:5173
 
 -------------------------------------------------------------
 
-###🔍 API Overview
+🔍 API Overview
 
-##Authentication
+Authentication
 - POST /api/v1/user/signup
 - POST /api/v1/user/signin
 
-##Account
+Account
 - GET /api/v1/account/balance
 - POST /api/v1/account/transfer
 
-##Users
+Users
 - GET /api/v1/user/bulk
 
 
