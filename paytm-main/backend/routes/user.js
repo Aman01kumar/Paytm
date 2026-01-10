@@ -8,17 +8,18 @@ const  { authMiddleware } = require("../middleware");
 
 const signupSchema = zod.object({
     username: zod.string().email(),
-    password: zod.string(),
+    password: zod.string().min(6),
     firstName: zod.string(),
-    password: zod.string()
+    lastName: zod.string()
 })
 
 router.post("/signup", async (req, res) => {
+    console.log("RAW BODY:", req.body);
     const body = req.body;
-    const {sucess} = signupSchema.safeParse(req.body);
-    if(!sucess){
-        return res.json({
-            message: "Email already taken / Incorrect inputs"
+    const {success} = signupSchema.safeParse(req.body);
+    if(!success){
+        return res.status(400).json({
+            message: "Invalid input data"
         })
     }
 
@@ -68,7 +69,7 @@ router.post("/signin", async (req, res) => {
     const { success } = signinSchema.safeParse(req.body)
     if (!success) {
         return res.status(411).json({
-            message: "Email already taken / Incorrect inputs"
+            message: "Incorrect inputs"
         })
     }
 
