@@ -24,32 +24,28 @@ The project is built using a **Node.js + Express backend** and a **React + Vite 
 
 ## 🏗 Project Structure
 
+```text
 paytm-main/
-│
 ├── backend/
-│ ├── routes/
-│ │ ├── user.js
-│ │ ├── account.js
-│ │ └── index.js
-│ ├── middleware.js
-│ ├── db.js
-│ ├── config.js
-│ └── index.js
-│
+│   ├── routes/
+│   │   ├── user.js        # User-related routes (signup, signin, etc.)
+│   │   ├── account.js     # Account-related routes (balance, transfer)
+│   │   └── index.js       # Main router entry
+│   ├── middleware.js      # JWT verification middleware
+│   ├── db.js              # MongoDB schema and connection
+│   ├── config.js          # Secrets and configurations
+│   └── index.js           # Server entry point
 ├── frontend/
-│ ├── src/
-│ │ ├── pages/
-│ │ ├── components/
-│ │ └── App.jsx
-│ ├── package.json
-│ └── vite.config.js
-│
+│   ├── src/
+│   │   ├── pages/         # Page components (Dashboard, SendMoney, etc.)
+│   │   ├── components/    # Reusable UI components
+│   │   └── App.jsx        # Main React component
+│   ├── package.json
+│   └── vite.config.js
 └── README.md
-
-yaml
 Copy code
-
----
+```
+---------------------------------------------------
 
 ## 🛠 Tech Stack
 
@@ -59,11 +55,15 @@ Copy code
 - MongoDB (Mongoose)
 - JWT Authentication
 
+---------------------------------------------------------
+
 ### Frontend
 - React
 - Vite
 - JavaScript
 - CSS
+
+-----------------------------------------------------------
 
 ### Tools
 - Git & GitHub
@@ -77,7 +77,7 @@ Copy code
 - Node.js (v14 or higher)
 - npm
 
----
+-----------------------------------------------
 
 ## 📦 Installation
 
@@ -131,25 +131,27 @@ Users
 GET /api/v1/user/bulk
 
 All protected routes require the header:
-
-makefile
-Copy code
 Authorization: Bearer <JWT_TOKEN>
-🧪 Testing
-Use Postman for backend API testing
 
-Use a browser to test the frontend
 
-Ensure the backend is running before starting the frontend
+## 🧪 Testing
 
-📌 Notes
-JWT tokens must be regenerated after backend restart
+- Use **Postman** for backend API testing
+- Use a browser to test the frontend
+- Ensure the backend server is running before starting the frontend
 
-User accounts are created automatically on signup
+---
 
-Authentication middleware protects sensitive routes
+## 📌 Notes
 
-👤 Author
-Aman Kumar
-Computer Science Undergraduate
+- JWT tokens must be regenerated after backend restart
+- User accounts are created automatically on signup
+- Authentication middleware protects sensitive routes
+
+---
+
+## 👤 Author
+
+**Aman Kumar**  
+Computer Science Undergraduate  
 Full-Stack Developer (MERN)
