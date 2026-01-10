@@ -93,18 +93,11 @@ Copy code
 - npm install
 - node index.js
 
-Backend runs at:
-   [http://localhost:3000](https://cloud.mongodb.com/v2/68ca7eb8c04b5f76d50564df#/explorer/68ca7ee6edcf2948f0388200/mydatabase/accounts/find)
-
-
 ▶️ Running the Frontend
 
 - cd frontend
 - npm install
 - npm run dev
-
-Frontend runs at:
-- http://localhost:5173
 
 -------------------------------------------------------------
 
