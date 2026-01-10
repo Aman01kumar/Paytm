@@ -83,56 +83,44 @@ Copy code
 
 ## Clone the repository
 
-#git clone https://github.com/your-username/paytm-main.git
---cd paytm-main
+- git clone https://github.com/your-username/paytm-main.git
+- cd paytm-main
 
 
 ##▶️ Running the Backend
 
---cd backend
---npm install
---node index.js
+- cd backend
+- npm install
+- node index.js
 
 #Backend runs at:
-[http://localhost:3000](https://cloud.mongodb.com/v2/68ca7eb8c04b5f76d50564df#/explorer/68ca7ee6edcf2948f0388200/mydatabase/accounts/find)
+   [http://localhost:3000](https://cloud.mongodb.com/v2/68ca7eb8c04b5f76d50564df#/explorer/68ca7ee6edcf2948f0388200/mydatabase/accounts/find)
 
 
 ##▶️ Running the Frontend
 
---cd frontend
---npm install
---npm run dev
+- cd frontend
+- npm install
+- npm run dev
 
 #Frontend runs at:
---http://localhost:5173
-
-
-##🔐 Environment Configuration
-
-#Create a config.js file inside the backend folder:
---js
---Copy code
---module.exports = {
- -- JWT_SECRET: "your_jwt_secret"
---};
+- http://localhost:5173
 
 -------------------------------------------------------------
 
 ###🔍 API Overview
 
-Authentication
---POST /api/v1/user/signup
---POST /api/v1/user/signin
+##Authentication
+- POST /api/v1/user/signup
+- POST /api/v1/user/signin
 
-Account
---GET /api/v1/account/balance
---POST /api/v1/account/transfer
+##Account
+- GET /api/v1/account/balance
+- POST /api/v1/account/transfer
 
-Users
---GET /api/v1/user/bulk
+##Users
+- GET /api/v1/user/bulk
 
---All protected routes require the header:
---Authorization: Bearer <JWT_TOKEN>
 
 ---------------------------------------------------------------
 
