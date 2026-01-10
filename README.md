@@ -81,33 +81,34 @@ Copy code
 
 ## 📦 Installation
 
-### Clone the repository
-```bash
+## Clone the repository
+
 git clone https://github.com/your-username/paytm-main.git
 cd paytm-main
-▶️ Running the Backend
-bash
-Copy code
+
+
+##▶️ Running the Backend
+
 cd backend
 npm install
 node index.js
 
-
 Backend runs at:
 http://localhost:3000
 
-▶️ Running the Frontend
+
+##▶️ Running the Frontend
 
 cd frontend
 npm install
 npm run dev
 
-
 Frontend runs at:
 http://localhost:5173
 
 
-🔐 Environment Configuration
+##🔐 Environment Configuration
+
 Create a config.js file inside the backend folder:
 js
 Copy code
@@ -115,16 +116,16 @@ module.exports = {
   JWT_SECRET: "your_jwt_secret"
 };
 
+-------------------------------------------------------------
 
-🔍 API Overview
+###🔍 API Overview
+
 Authentication
 POST /api/v1/user/signup
-
 POST /api/v1/user/signin
 
 Account
 GET /api/v1/account/balance
-
 POST /api/v1/account/transfer
 
 Users
@@ -133,6 +134,7 @@ GET /api/v1/user/bulk
 All protected routes require the header:
 Authorization: Bearer <JWT_TOKEN>
 
+---------------------------------------------------------------
 
 ## 🧪 Testing
 
@@ -140,7 +142,7 @@ Authorization: Bearer <JWT_TOKEN>
 - Use a browser to test the frontend
 - Ensure the backend server is running before starting the frontend
 
----
+-----------------------------------------------------------------
 
 ## 📌 Notes
 
@@ -148,7 +150,7 @@ Authorization: Bearer <JWT_TOKEN>
 - User accounts are created automatically on signup
 - Authentication middleware protects sensitive routes
 
----
+----------------------------------------------------------------------
 
 ## 👤 Author
 
