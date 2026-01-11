@@ -12,6 +12,3 @@ const mainRouter = require("./routes/index")
 app.use("/api/v1", mainRouter);
 
 app.listen(3000);
-
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTYyOGUxOWE3NzEyNGI2YmI5NjA5YWUiLCJpYXQiOjE3NjgwNjY1ODV9.C1XnntdsgJxhDaEnGXum2Tl2zei_Zx2ywY945BYVAK4"
