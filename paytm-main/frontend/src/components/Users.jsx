@@ -3,7 +3,6 @@ import { Button } from "./Button";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-// get logged-in userId from JWT
 function getUserIdFromToken() {
   const token = localStorage.getItem("token");
   if (!token) return null;
@@ -26,7 +25,6 @@ export const Users = () => {
     axios
       .get("http://localhost:3000/api/v1/user/bulk?filter=" + filter)
       .then((response) => {
-        // ONLY logic change: remove self
         setUsers(
           response.data.user.filter(
             (user) => user._id !== loggedInUserId
