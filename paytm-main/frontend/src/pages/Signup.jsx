@@ -46,6 +46,7 @@ export const Signup = () => {
               lastName,
               password
             });
+            
             localStorage.setItem("token", response.data.token)
             navigate("/dashboard")
           }} label={"Sign up"} />
